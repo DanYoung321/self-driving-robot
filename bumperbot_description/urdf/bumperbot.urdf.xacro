@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 
-<robot name="bumperbot">
+<robot name="bumperbot" >
+
+   
+
     <link name="base_footprint"/>
 
     <link name="base_link">
