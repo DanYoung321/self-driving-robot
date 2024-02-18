@@ -5,10 +5,14 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  turtlesim
 )
 
+catkin_python_setup()
 
 catkin_package(
+  CATKIN_DEPENDS
+  turtlesim
 )
 
 
@@ -19,4 +23,5 @@ include_directories(
 catkin_install_python(PROGRAMS 
   nodes/simple_publisher.py
   nodes/simple_subscriber.py
+  nodes/turtlesim_kinematics_node.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
